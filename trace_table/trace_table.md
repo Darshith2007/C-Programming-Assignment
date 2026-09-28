@@ -1,6 +1,6 @@
 # Trace Tables
 
-The graph is treated as **undirected** and neighbours are processed in the order in which the connections are inserted (alphabetical for each vertex here).
+Neighbours are processed in the order in which the edges are inserted.
 
 ## BFS from A
 
