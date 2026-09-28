@@ -1,0 +1,50 @@
+SOCIAL NETWORK GRAPH
+Connections: A-B, A-C, B-D, B-E, C-F, E-F
+
+ADJACENCY MATRIX
+    A B C D E F
+A   0 1 1 0 0 0 
+B   1 0 0 1 1 0 
+C   1 0 0 0 0 1 
+D   0 1 0 0 0 0 
+E   0 1 0 0 0 1 
+F   0 0 1 0 1 0 
+
+ADJACENCY LIST
+A -> B C 
+B -> A D E 
+C -> A F 
+D -> B 
+E -> B F 
+F -> C E 
+
+BFS using adjacency matrix from A: A B C D E F 
+Matrix BFS cell checks: 36
+
+BFS using adjacency list from A: A B C D E F 
+List BFS neighbour checks: 12
+
+DFS using adjacency matrix from A: A B D E F C 
+Matrix DFS cell checks: 36
+
+DFS using adjacency list from A: A B D E F C 
+List DFS neighbour checks: 12
+
+Enter vertex to search (A-F): 
+MATRIX VERTEX SEARCH for F
+Found F after 6 vertex-label checks.
+
+LIST VERTEX SEARCH for F
+Found F after 6 vertex-label checks.
+
+EDGE CHECK: E-F
+Adjacency Matrix: 1 direct cell check -> edge exists
+Adjacency List: 2 neighbour checks -> edge exists
+
+COMPLEXITY
+Adjacency Matrix space: O(V^2)
+Adjacency List space: O(V+E)
+BFS/DFS with matrix: O(V^2)
+BFS/DFS with list: O(V+E)
+Matrix edge check: O(1)
+List edge check: O(degree(u)), worst-case O(V)
